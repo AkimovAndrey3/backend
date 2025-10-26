@@ -7,7 +7,7 @@ app = FastAPI()
 # Настройка CORS для разрешения запросов с фронтенда
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # В продакшене замените на конкретный домен фронтенда
+    allow_origins=["http://localhost:3000"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
